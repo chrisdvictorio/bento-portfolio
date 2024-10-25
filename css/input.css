@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-manrope text-[050505];
+    }
+}
+
+@layer components{
+    .home{
+        @apply h-dvh text-[#000000] dark:text-[#D4D4D8] bg-[#F0F2F5] dark:bg-[#050505]; 
+    }
+    
+    .home-container{
+        @apply flex flex-col h-full p-8 gap-4;
+    }
+
+    .content-container{
+        @apply flex-1 p-5 rounded-3xl border border-[#E4E6EB] dark:border-[#191919] bg-[#FFFFFF] dark:bg-[#101010];
+    }
+
+    .contact{
+        @apply flex items-center gap-2 px-4 py-1 rounded-3xl border border-[#CED0D4] dark:border-[#212121] bg-[#E4E6EB] dark:bg-[#191919];
+    }
+
+    .profile-button{
+        @apply flex items-center justify-center rounded-lg gap-2 w-full py-2 cursor-pointer bg-[#E4E6EB] dark:bg-[#191919];
+    }
+
+    .image{
+        @apply absolute left-0 top-0 h-full w-full rounded-3xl object-cover object-center;;
+    }
+
+    .project-container{
+        @apply flex flex-col flex-1 p-4 rounded-3xl border border-[#CED0D4] dark:border-[#212121] bg-[#E4E6EB] dark:bg-[#191919];
+    }
+
+    .project-title{
+        @apply flex items-center justify-center gap-2 mb-2;
+    }
+
+    .trait-container{
+        @apply flex-1 rounded-3xl bg-[#F0F2F5] dark:bg-[#282828];
+    }
+
+    .trait-title{
+        @apply relative flex items-center justify-center h-1/2 gap-2 rounded-t-3xl rounded-bl-3xl bg-[#D6D4D4] dark:bg-[#191919];
+    }
+
+    .trait-description{
+        @apply relative flex items-center flex-1 h-1/2 rounded-b-3xl rounded-tr-3xl bg-[#F0F2F5] dark:bg-[#282828];
+    }
+
+    .skill-container{
+        @apply flex items-center rounded-lg gap-3 pl-3 border bg-[#E4E6EB] border-[#CED0D4] dark:border-[#212121] dark:bg-[#191919];
+    }
+
+    .skill-logo{
+        @apply flex items-center justify-center size-12 rounded-lg border bg-[#F0F2F5] border-[#CED0D4] dark:border-[#212121] dark:bg-[#282828];
+    }
+    
+    .link-container{
+        @apply flex flex-col justify-between w-full p-4 rounded-lg border border-[#CED0D4] dark:border-[#212121] bg-[#E4E6EB] dark:bg-[#191919];
+    }
+    
+    .link-title{
+        @apply inline-block px-4 font-semibold rounded-lg border border-[#CED0D4] dark:border-[#212121] bg-[#F0F2F5] dark:bg-[#101010];
+    }
+
+    .link-button{
+        @apply block font-light text-center rounded-lg border border-[#CED0D4] dark:border-[#212121] bg-[#F0F2F5] dark:bg-[#101010] cursor-pointer;
+    }
+}

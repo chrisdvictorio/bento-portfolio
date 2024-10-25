@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Victorio</title>
+    <link rel="icon" type="image/x-icon" href="/images/cv.png">
+    <link href="/dist/output.css" rel="stylesheet">
+    <!----- Fonts ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!----- Icons ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body class="dark">
+    <section id="home" class="home md:h-full 2xl:h-full">
+        <div class="home-container md:p-6">
+            <!---------- Top Section ---------->
+            <div class="flex flex-[0.5] gap-4 md:flex-col 2xl:flex-col">
+                <!---------- Logo ---------->
+                <div class="content-container flex items-center justify-between md:flex-col md:gap-4">
+                    <div class="flex items-center gap-4">
+                        <img src="/images/cv.png" alt="logo" class="size-16 3xl:size-12"/>
+                        <h1 class="text-5xl 3xl:text-4xl font-bold">Chris <span class="inline-block text-green-700">Victorio</span></h1>
+                    </div>
+                    <button onclick="document.body.classList.toggle('dark')" class="3xl:text-sm">Toggle Light Mode</button>
+                </div>
+                <!---------- Contacts ---------->
+                <div class="content-container flex items-center justify-between md:hidden 3xl:justify-center 2xl:justify-center 2xl:hidden">
+                    <p class="2xl:hidden 3xl:hidden">Contact Me:</p>
+                    <div class="flex items-center gap-4 md:flex-col">
+                        <div class="contact 3xl:text-sm">
+                            <i class="fa-solid fa-envelope fa-beat text-green-700"></i>
+                            <p>chrisdvictorio@gmail.com</p>
+                        </div>
+                        <div class="contact 3xl:text-sm">
+                            <i class="fa-solid fa-phone fa-shake text-green-700"></i>
+                            <p><span class="inline-block font-bold">+63</span> 945 794 6920</p>
+                        </div>
+                        <div class="contact 3xl:text-sm">
+                            <i class="fa-solid fa-location-dot fa-bounce text-lg text-green-700"></i>
+                            <p>Laguna, Philippines</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------- Middle Section ---------->
+            <div class="flex flex-[2] gap-4 md:flex-col">
+                <div class="flex flex-col flex-[1.6] gap-4">
+                    <!---------- Profile ---------->
+                    <div class="content-container flex flex-col">
+                        <div class="flex items-center flex-grow gap-4 sm:flex-col 2xl:flex-col">
+                            <img src="/images/profile.png" alt="profile-picture" class="size-28 object-cover rounded-3xl bg-green-900 3xl:size-24">
+                            <div>
+                                <p class="text-[#707070] sm:text-center 3xl:text-sm 2xl:text-center">@ishmimi_</p>
+                                <h1 class="text-3xl sm:text-center 3xl:text-2xl">Welcome to my Portfolio,</h1>
+                                <p class="3xl:text-sm sm:text-center sm:mb-3 2xl:text-center">I'm an aspiring <span class="inline-block font-bold text-green-700">Full-Stack Developer.</span></p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between gap-4 mt-2 2xl:flex-col">
+                            <a class="profile-button 3xl:text-sm">
+                                <i class="fa-solid fa-circle-info text-lg text-green-700"></i>
+                                <p>About Me</p>
+                            </a>
+                            <a class="profile-button 3xl:text-sm">
+                                <i class="fa-solid fa-file text-lg text-green-700"></i>
+                                <p>Download CV</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!---------- Map ---------->
+                    <div class="content-container relative md:min-h-32 2xl:min-h-56">
+                        <img src="/images/map.png" alt="map-dark" class="image hidden dark:block"/>
+                        <img src="/images/map-light.png" alt="map-light" class="image dark:hidden"/>
+                    </div>
+                </div>
+                <div class="flex flex-1 2xl:hidden">
+                    <!---------- Picture ---------->
+                    <div class="content-container relative md:h-96">
+                        <img src="/images/profile1.jpg" alt="profile-dark" class="image hidden dark:block"/>
+                        <img src="/images/profile1-light.png" alt="profile-light" class="image dark:hidden"/>
+                    </div>
+                </div>
+                <div class="flex flex-[2.5] 2xl:hidden">
+                    <!---------- Projects ---------->
+                    <div class="content-container flex flex-col gap-4">
+                        <div class="flex items-center justify-between gap-4">
+                            <p class="text-xl 3xl:text-lg">My <span class="inline-block font-bold text-green-700">Projects</span></p>
+                            <p class="cursor-pointer text-[#707070] 3xl:text-sm">See More</p>
+                        </div>
+                        <div class="flex h-full gap-4 md:flex-col">
+                            <div class="project-container">
+                                <div class="project-title 3xl:text-sm">
+                                    <i class="fa-solid fa-diagram-project text-green-700"></i>
+                                    <p class="font-bold">Portfolio</p>
+                                </div>
+                                <div class="flex-grow relative md:h-80">
+                                    <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                                </div>
+                            </div>
+                            <div class="project-container">
+                                <div class="project-title 3xl:text-sm">
+                                    <i class="fa-solid fa-diagram-project text-green-700"></i>
+                                    <p class="font-bold">Portfolio</p>
+                                </div>
+                                <div class="flex-grow relative md:h-80">
+                                    <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                                </div>
+                            </div>
+                            <div class="project-container">
+                                <div class="project-title 3xl:text-sm">
+                                    <i class="fa-solid fa-diagram-project text-green-700"></i>
+                                    <p class="font-bold">Portfolio</p>
+                                </div>
+                                <div class="flex-grow relative md:h-80">
+                                    <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------- Bottom Section ---------->
+            <div class="flex flex-[1.2] gap-4 md:flex-col">
+                <!---------- Why Me ---------->
+                <div class="content-container flex justify-between gap-4 md:flex-col 2xl:flex-col">
+                    <div class="trait-container">
+                        <div class="trait-title md:h-20 3xl:text-sm">
+                            <div class="absolute -bottom-6 right-0 w-7 h-6 bg-[#D6D4D4] dark:bg-[#191919]"></div>
+                            <i class="fa-solid fa-book text-lg text-green-700"></i>
+                            <p class="font-bold">Eager Learner</p>
+                        </div>
+                        <div class="trait-description md:h-20 md:justify-center 2xl:justify-center">
+                            <p class="text-sm text-center 3xl:text-xs">passionate about technology, continuously seek new knowledge.</p>
+                        </div>
+                    </div>
+                    <div class="trait-container">
+                        <div class="trait-title md:h-20 3xl:text-sm">
+                            <div class="absolute -bottom-6 right-0 w-7 h-6 bg-[#D6D4D4] dark:bg-[#191919]"></div>
+                            <i class="fa-solid fa-school text-lg text-green-700"></i>
+                            <p class="font-bold">Foundation</p>
+                        </div>
+                        <div class="trait-description md:h-20 md:justify-center 2xl:justify-center">
+                            <p class="text-sm text-center 3xl:text-xs">computer science background with basic knowledge in MERN stack.</p>
+                        </div>
+                    </div>
+                    <div class="trait-container">
+                        <div class="trait-title md:h-20 3xl:text-sm">
+                            <div class="absolute -bottom-6 right-0 w-7 h-6 bg-[#D6D4D4] dark:bg-[#191919]"></div>
+                            <i class="fa-solid fa-list-check text-lg text-green-700"></i>
+                            <p class="font-bold">Task-Oriented</p>
+                        </div>
+                        <div class="trait-description md:h-20 md:justify-center 2xl:justify-center">
+                            <p class="text-sm text-center 3xl:text-xs">ability to focus on tasks to ensure project completion in an efficient manner.</p>
+                        </div>
+                    </div>
+                </div>
+                <!---------- Skills ---------->
+                <div class="content-container flex flex-col gap-4">
+                    <div class="flex items-center justify-between gap-4">
+                        <p class="text-xl 3xl:text-lg">My <span class="inline-block font-bold text-green-700">Skills</span></p>
+                        <p class="cursor-pointer text-[#707070] 3xl:text-sm">See More</p>
+                    </div>
+                    <div class="grid grid-cols-3 h-full gap-4 md:grid-cols-1 2xl:grid-cols-1">
+                        <div class="skill-container md:py-2 2xl:py-2">
+                            <div class="skill-logo 3xl:size-10">
+                                <i class="fa-brands fa-html5 text-4xl 3xl:text-3xl text-green-700"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="font-bold 3xl:text-sm">HTML 5</p>
+                                <p class="text-sm text-[#707070] 3xl:text-xs">8/10</p>
+                            </div>
+                        </div>
+                        <div class="skill-container md:py-2 2xl:py-2">
+                            <div class="skill-logo 3xl:size-10">
+                                <i class="fa-brands fa-css3-alt text-4xl 3xl:text-3xl text-green-700"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="font-bold 3xl:text-sm">CSS</p>
+                                <p class="text-sm text-[#707070] 3xl:text-xs">8/10</p>
+                            </div>
+                        </div>
+                        <div class="skill-container md:py-2 2xl:py-2">
+                            <div class="skill-logo 3xl:size-10">
+                                <i class="fa-brands fa-js text-4xl 3xl:text-3xl text-green-700"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="font-bold 3xl:text-sm">JavaScript</p>
+                                <p class="text-sm text-[#707070] 3xl:text-xs">6.5/10</p>
+                            </div>
+                        </div>
+                        <div class="skill-container md:py-2 2xl:py-2">
+                            <div class="skill-logo 3xl:size-10">
+                                <i class="fa-brands fa-python text-4xl 3xl:text-3xl text-green-700"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="font-bold 3xl:text-sm">Python</p>
+                                <p class="text-sm text-[#707070] 3xl:text-xs">3/10</p>
+                            </div>
+                        </div>
+                        <div class="skill-container md:py-2 2xl:py-2">
+                            <div class="skill-logo 3xl:size-10">
+                                <i class="fa-brands fa-react text-4xl 3xl:text-3xl text-green-700"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="font-bold 3xl:text-sm">React JS</p>
+                                <p class="text-sm text-[#707070] 3xl:text-xs">5/10</p>
+                            </div>
+                        </div>
+                        <div class="skill-container md:py-2 2xl:py-2">
+                            <div class="skill-logo 3xl:size-10">
+                                <i class="fa-brands fa-node-js text-4xl 3xl:text-3xl text-green-700"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="font-bold 3xl:text-sm">Node JS</p>
+                                <p class="text-sm text-[#707070] 3xl:text-xs">5/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------- Projects "SMALL" ---------->
+                <div class="content-container hidden flex-col gap-4 md:flex">
+                    <div class="flex items-center justify-between gap-4">
+                        <p class="text-xl">My <span class="inline-block font-bold text-green-700">Projects</span></p>
+                        <p class="cursor-pointer text-[#707070]">See More</p>
+                    </div>
+                    <div class="hidden h-full gap-4 md:flex md:flex-col">
+                        <div class="project-container">
+                            <div class="project-title">
+                                <i class="fa-solid fa-diagram-project text-green-700"></i>
+                                <p class="font-bold">Portfolio</p>
+                            </div>
+                            <div class="flex-grow relative md:h-80">
+                                <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                            </div>
+                        </div>
+                        <div class="project-container">
+                            <div class="project-title">
+                                <i class="fa-solid fa-diagram-project text-green-700"></i>
+                                <p class="font-bold">Portfolio</p>
+                            </div>
+                            <div class="flex-grow relative md:h-80">
+                                <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                            </div>
+                        </div>
+                        <div class="project-container">
+                            <div class="project-title">
+                                <i class="fa-solid fa-diagram-project text-green-700"></i>
+                                <p class="font-bold">Portfolio</p>
+                            </div>
+                            <div class="flex-grow relative md:h-80">
+                                <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------- Links ---------->
+                <div class="content-container flex flex-col gap-4 2xl:hidden">
+                    <p class="text-xl 3xl:text-lg">Profile <span class="inline-block font-bold text-green-700">Links</span></p>
+                    <div class="flex flex-grow gap-4 md:flex-col 2xl:flex-col">
+                        <div class="link-container md:gap-3">
+                            <div class="md:flex md:flex-col md:items-center">
+                                <h1 class="link-title 3xl:text-sm">Instagram</h1>
+                            </div>
+                            <div class="md:flex md:justify-center md:items-center md:gap-2">
+                                <i class="fa-brands fa-square-instagram text-6xl 3xl:text-5xl text-green-700"></i>
+                                <p class="text-[#707070] 3xl:text-sm">@ishmimi_</p>
+                            </div>
+                            <a class="link-button 3xl:text-sm">Follow</a>
+                        </div>
+                        <div class="link-container md:gap-3">
+                            <div class="md:flex md:flex-col md:items-center">
+                                <h1 class="link-title 3xl:text-sm">LinkedIn</h1>
+                            </div>
+                            <div class="md:flex md:justify-center md:items-center md:gap-2">
+                                <i class="fa-brands fa-linkedin text-6xl 3xl:text-5xl text-green-700"></i>
+                                <p class="text-[#707070] 3xl:text-sm">@chris-victorio</p>
+                            </div>
+                            <a class="link-button 3xl:text-sm">Connect</a>
+                        </div>
+                        <div class="link-container md:gap-3">
+                            <div class="md:flex md:flex-col md:items-center">
+                                <h1 class="link-title 3xl:text-sm">GitHub</h1>
+                            </div>
+                            <div class="md:flex md:justify-center md:items-center md:gap-2">
+                                <i class="fa-brands fa-square-github text-6xl 3xl:text-5xl text-green-700"></i>
+                                <p class="text-[#707070] 3xl:text-sm">@ishmimi</p>
+                            </div>
+                            <a class="link-button 3xl:text-sm">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <!---------- Contact Me Mobile ---------->
+                <div class="content-container hidden items-center justify-between md:flex md:flex-col md:gap-4">
+                    <p>Contact Me:</p>
+                    <div class="flex items-center gap-4 md:flex-col ">
+                        <div class="contact">
+                            <i class="fa-solid fa-envelope fa-beat text-green-700"></i>
+                            <p>chrisdvictorio@gmail.com</p>
+                        </div>
+                        <div class="contact">
+                            <i class="fa-solid fa-phone fa-shake text-green-700"></i>
+                            <p><span class="inline-block font-bold">+63</span> 945 794 6920</p>
+                        </div>
+                        <div class="contact">
+                            <i class="fa-solid fa-location-dot fa-bounce text-lg text-green-700"></i>
+                            <p>Laguna, Philippines</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------- Projects "2XL" ---------->
+            <div class="content-container hidden flex-col gap-4 md:hidden 2xl:flex">
+                <div class="flex items-center justify-between gap-4">
+                    <p class="text-xl 3xl:text-lg">My <span class="inline-block font-bold text-green-700">Projects</span></p>
+                    <p class="cursor-pointer text-[#707070] 3xl:text-sm">See More</p>
+                </div>
+                <div class="flex h-full gap-4 md:flex-col">
+                    <div class="project-container">
+                        <div class="project-title 3xl:text-sm">
+                            <i class="fa-solid fa-diagram-project text-green-700"></i>
+                            <p class="font-bold">Portfolio</p>
+                        </div>
+                        <div class="flex-grow relative md:h-80 2xl:h-96">
+                            <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-title 3xl:text-sm">
+                            <i class="fa-solid fa-diagram-project text-green-700"></i>
+                            <p class="font-bold">Portfolio</p>
+                        </div>
+                        <div class="flex-grow relative md:h-80 2xl:h-96">
+                            <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-title 3xl:text-sm">
+                            <i class="fa-solid fa-diagram-project text-green-700"></i>
+                            <p class="font-bold">Portfolio</p>
+                        </div>
+                        <div class="flex-grow relative md:h-80 2xl:h-96">
+                            <img src="images/project1.png" alt="project" class="image dark:grayscale-[50%]"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------- Links "2XL" ---------->
+            <div class="content-container hidden flex-col gap-4 2xl:flex">
+                <p class="text-xl 3xl:text-lg">Profile <span class="inline-block font-bold text-green-700">Links</span></p>
+                <div class="flex flex-grow gap-4 md:flex-col 2xl:flex-row">
+                    <div class="link-container md:gap-3 2xl:gap-3">
+                        <div class="md:flex md:flex-col md:items-center 2xl:flex 2xl:flex-col 2xl:items-center">
+                            <h1 class="link-title md:py-1 3xl:text-sm">Instagram</h1>
+                        </div>
+                        <div class="md:flex md:justify-center md:items-center md:gap-2 2xl:flex 2xl:flex-col 2xl:items-center">
+                            <i class="fa-brands fa-square-instagram text-6xl 3xl:text-5xl text-green-700"></i>
+                            <p class="text-[#707070] 3xl:text-sm">@ishmimi_</p>
+                        </div>
+                        <a class="link-button 3xl:text-sm">Follow</a>
+                    </div>
+                    <div class="link-container md:gap-3">
+                        <div class="md:flex md:flex-col md:items-center 2xl:flex 2xl:flex-col 2xl:items-center">
+                            <h1 class="link-title 3xl:text-sm">LinkedIn</h1>
+                        </div>
+                        <div class="md:flex md:justify-center md:items-center md:gap-2 2xl:flex 2xl:flex-col 2xl:items-center">
+                            <i class="fa-brands fa-linkedin text-6xl 3xl:text-5xl text-green-700"></i>
+                            <p class="text-[#707070] 3xl:text-sm">@chris-victorio</p>
+                        </div>
+                        <a class="link-button 3xl:text-sm">Connect</a>
+                    </div>
+                    <div class="link-container md:gap-3">
+                        <div class="md:flex md:flex-col md:items-center 2xl:flex 2xl:flex-col 2xl:items-center">
+                            <h1 class="link-title 3xl:text-sm">GitHub</h1>
+                        </div>
+                        <div class="md:flex md:justify-center md:items-center md:gap-2 2xl:flex 2xl:flex-col 2xl:items-center">
+                            <i class="fa-brands fa-square-github text-6xl 3xl:text-5xl text-green-700"></i>
+                            <p class="text-[#707070] 3xl:text-sm">@ishmimi</p>
+                        </div>
+                        <a class="link-button 3xl:text-sm">Link</a>
+                    </div>
+                </div>
+            </div>
+            <!---------- Contacts "2XL" ---------->
+            <div class="content-container hidden items-center justify-between md:hidden 2xl:flex 2xl:justify-center">
+                <p class="3xl:text-sm 2xl:hidden">Contact Me:</p>
+                <div class="flex items-center gap-4 md:flex-col">
+                    <div class="contact 3xl:text-sm 2xl:text-sm">
+                        <i class="fa-solid fa-envelope fa-beat text-green-700"></i>
+                        <p>chrisdvictorio@gmail.com</p>
+                    </div>
+                    <div class="contact 3xl:text-sm 2xl:text-sm">
+                        <i class="fa-solid fa-phone fa-shake text-green-700"></i>
+                        <p><span class="inline-block font-bold">+63</span> 945 794 6920</p>
+                    </div>
+                    <div class="contact 3xl:text-sm 2xl:text-sm">
+                        <i class="fa-solid fa-location-dot fa-bounce text-lg text-green-700"></i>
+                        <p>Laguna, Philippines</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
